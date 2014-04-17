@@ -11,7 +11,7 @@ KISSY.use('node,dom,event,io,cookie,gallery/simple-mask/1.0/,gallery/kissy-mscro
 			type:'auto',
         	mode:'random',
         	volume:1,
-            auto:'true', //自动播放 默认不播放.
+            auto:'false', //自动播放 默认不播放.
          //   mode:'order', //如果几首歌想随机播放,设置为 random, 默认为order.
             musicList:[{"name":"不如夜跑背景音乐", "path":"./static/yepao.mp3"}]
         });
