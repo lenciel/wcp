@@ -23,7 +23,7 @@ section,aside,header,footer,hgroup,article{display:block}
 .foot{width:100%;min-width:320px;margin-top:10px;padding:10px 0;color:#222;text-align:center;}
 .foot a{color:#222;margin:0 3px;}
 
-.share-tips{position: fixed;left:50%;top:10px;margin-left:-125px;width:250px;height:222px;z-index:1000;background:url(http://a.zhixun.in/plug/img/share-tips.png) center center no-repeat;background-size: 250px auto}
+.share-tips{position: fixed;left:50%;top:10px;margin-left:-125px;width:250px;height:222px;z-index:1000;background:url(../img/share-tips.png) center center no-repeat;background-size: 250px auto}
 /*网页样式重置reset*/
 html { font-size:1em;-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight:rgba(0,0,0,0);-webkit-text-size-adjust:none;}
 body { font-size:0.75em}

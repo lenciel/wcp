@@ -3,7 +3,7 @@
  * Author:Mr.Think
  * Description:基类
  *******************************/
-_WXShare('http://xavanke.zhixun.in/14yepao/static/img/share.jpg','100','100','加入西安最屌的夜跑团，在黑夜征服每一条街道！','压力无法推卸，赘肉无法忍受，但夜晚的道路为你敞开！','http://xavanke.zhixun.in/14yepao/');
+_WXShare('http://wcp.lenciel.cn/sample1/static/img/share.jpg','100','100','加入西安最屌的夜跑团，在黑夜征服每一条街道！','压力无法推卸，赘肉无法忍受，但夜晚的道路为你敞开！','http://wcp.lenciel.cn/sample1/');
 
 KISSY.use('node,dom,event,io,cookie,gallery/simple-mask/1.0/,gallery/kissy-mscroller/1.3/index,gallery/simple-mask/1.0/,gallery/datalazyload/1.0.1/index,gallery/musicPlayer/2.0/index',function(S,Node,DOM,Event,IO,Cookie,Mask,KSMscroller,Mask,DataLazyload,MusicPlayer){
 	var $=Node.all;
