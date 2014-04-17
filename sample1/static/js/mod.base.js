@@ -8,10 +8,10 @@ _WXShare('http://wcp.lenciel.cn/sample1/static/img/share.jpg','100','100','加�
 KISSY.use('node,dom,event,io,cookie,gallery/simple-mask/1.0/,gallery/kissy-mscroller/1.3/index,gallery/simple-mask/1.0/,gallery/datalazyload/1.0.1/index,gallery/musicPlayer/2.0/index',function(S,Node,DOM,Event,IO,Cookie,Mask,KSMscroller,Mask,DataLazyload,MusicPlayer){
 	var $=Node.all;
 	var musicPlayer = new MusicPlayer({
-			type:'auto',
+            type:'auto',
+            mode:'random',
+            volume:1,
             auto:'true',
-            mode:'order',
-        	volume:1,
             musicList:[{"name":"不如夜跑背景音乐", "path":"./static/i_see_fire.wav"}]
         });
 	var status_bool=false;
