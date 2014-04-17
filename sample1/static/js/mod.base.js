@@ -161,5 +161,3 @@ KISSY.use('node,dom,event,io,cookie,gallery/simple-mask/1.0/,gallery/kissy-mscro
 	   }
 });
 
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe8fe93653b713ac66440a59ffb7dca0e' type='text/javascript'%3E%3C/script%3E"));
