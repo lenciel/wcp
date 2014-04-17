@@ -12,7 +12,7 @@ KISSY.use('node,dom,event,io,cookie,gallery/simple-mask/1.0/,gallery/kissy-mscro
             auto:'true',
             mode:'order',
         	volume:1,
-            musicList:[{"name":"不如夜跑背景音乐", "path":"./static/i_see_fire.mp3"}]
+            musicList:[{"name":"不如夜跑背景音乐", "path":"./static/i_see_fire.wav"}]
         });
 	var status_bool=false;
 
