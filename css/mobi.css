@@ -374,37 +374,7 @@ body {height: 100%; overflow: hidden;}
     float: left;
     margin: 3px;
 }
-/*  */
-#takealook{position:absolute;top:0;left:0;height:100%;width:100%}
-.run-dialog{display:none;position:absolute;z-index:9999;top:0;left:0;width:100%;height:100%;background:url(../img/sample1/bg-drop.jpg) center top no-repeat;background-size:100% auto}
-.run-dialog-show{display:block}
-.run-dialog a{position:absolute;top:0;right:0;width:100%;height:100%}
-/*.run-input{position:relative}*/
-.run-input div{position:absolute;width: 254px;height: 38px;font-size:25px;margin-left:-127px;left: 50%; top: 50%;}
-.run-input input{text-indent: 1em;border:0;line-height:28px;background:none;width: 254px;height: 38px;font-size:20px;margin-left:-127px;left: 50%; top: 50%;position:absolute;background:transparent;}
-/*.run-input input:focus{margin-top: -0px;}*/
-.run-input .run-input-name{position: absolute;margin-top: -32px;}
-.run-input .run-input-phone{margin-top: 19px;}
-.run-input .run-input-id{margin-top: 75px;}
-.run-input .run-input-now{position: absolute;display: block;left: 50%;top: 50%;margin-top: 142px;margin-left: -123px;text-indent: -9999px;width: 123px;height: 47px;}
-.run-input .run-input-share{position: absolute;display: block;left: 50%;top: 50%;margin-top: 142px;margin-left: 3px;text-indent: -9999px;width: 123px;height: 47px;}
-.m-img img{display:none;position:absolute;top:50%;left:50%}
-.player-button{position:fixed;z-index:10000;display:block;top:10px;right:10px;width:30px;height:30px;background:url(../img/player-button.png) -30px 0;background-size:60px 30px;cursor:pointer;/*background-position: center;*/background-repeat: no-repeat;}
-.player-button-stop{background-position:0 0}
-.player-tip{position:absolute;top:5px;left:-140px;width:120px;background:rgba(59,89,114,.6);border-radius:4px 0 0 4px;font-size:10px;color:#ccc;line-height:20px;text-align:center}
-.player-tip:after{content:"";position:absolute;right:-32px;width:0;height:0;border-left:16px solid rgba(59,89,114,.6);border-top:10px solid transparent;border-right:16px solid transparent;border-bottom:10px solid transparent;}
-.copy{position: absolute;
 
-bottom: 2px;
-right: 10px;
-/*left: 50%;
-margin-left: -50px;*/color: #ccc}
-.copycenter{position: absolute;
-
-bottom: 2px;
-
-left: 50%;
-margin-left: -50px;color: #ccc}
 .next-page{position: absolute;left: 50%;margin-left: -119px;width: 238px;height: 42px;top:50%;background-color: transparent;margin-top: 120px;z-index: 99999}
 .animated {
 	-webkit-animation-duration: 1s;
