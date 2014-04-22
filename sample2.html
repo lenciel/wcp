@@ -216,10 +216,12 @@
         var musicPlayer = new MusicPlayer({
             type:'auto',
             mode:'random',
+            auto:'true',
             volume:1,
             musicList:[{"name":"yepao", "path":"./audio/yepao.mp3"}]
         });
-        var status_bool=false;
+        
+        var status_bool=true;
 
         $(".player-button").on("click",function(){
             if(status_bool==true){
