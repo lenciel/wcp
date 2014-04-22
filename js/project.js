@@ -24,8 +24,8 @@ var Msize = $(".m-page").size(), 	//页面的数目
  ** 声音功能的控制
  */
   audio_switch_btn = true,			//声音开关控制值
-  audio_btn = false,			//声音播放完毕
-  audio_loop = false,		    //声音循环
+  audio_btn = true,			//声音播放完毕
+  audio_loop = true,		    //声音循环
   audioTime = null,         //声音播放延时
   audioTimeT = null,			//记录上次播放时间
   audio_interval = null,			//声音循环控制器
