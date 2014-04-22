@@ -209,7 +209,7 @@
      * Author:Mr.Think
      * Description:基类
      *******************************/
-    _WXShare('img/sample2/share.jpg','100','100','加入西安最屌的夜跑团，在黑夜征服每一条街道！','压力无法推卸，赘肉无法忍受，但夜晚的道路为你敞开！','http://wcp.lenciel.cn/sample2/');
+    _WXShare('img/sample2/share.jpg','100','100','你没见过！中国首个居住智慧体验馆！','居住的智慧体验馆是国内首个以展示居住性能和未来居住方式的展览馆。','http://wcp.lenciel.cn/sample2');
 
     KISSY.use('node,dom,event,io,cookie,gallery/simple-mask/1.0/,gallery/kissy-mscroller/1.3/index,gallery/simple-mask/1.0/,gallery/datalazyload/1.0.1/index,gallery/musicPlayer/2.0/index',function(S,Node,DOM,Event,IO,Cookie,Mask,KSMscroller,Mask,DataLazyload,MusicPlayer){
         var $=Node.all;
@@ -217,10 +217,8 @@
             type:'auto',
             mode:'random',
             volume:1,
-            auto:'true',
-            musicList:[{"name":"不如夜跑背景音乐", "path":"./audio/yepao.mp3"}]
+            musicList:[{"name":"yepao", "path":"./audio/yepao.mp3"}]
         });
-        musicPlayer.play();
         var status_bool=false;
 
         $(".player-button").on("click",function(){
@@ -241,24 +239,6 @@
             }else{$("#J_nav_ditu_box").attr("status","1");
                 $("#J_nav_ditu_box").css("bottom","0px");}
         });
-        /*	$(window).on("tab",function(){
-         $(".player-tip").hide(0.1);
-         $(window).detach("tab");
-         $(window).detach("click");
-         $(window).detach("swipe");
-         });
-         $(window).on("click",function(){
-         $(".player-tip").hide(0.1);
-         $(window).detach("tab");
-         $(window).detach("click");
-         $(window).detach("swipe");
-         });
-         $(window).on("swipe",function(e){
-         $(".player-tip").hide(0.1);
-         $(window).detach("tab");
-         $(window).detach("click");
-         $(window).detach("swipe");
-         });*/
 
         _PreLoadImg([
             'img/sample2/biange-b.png',
@@ -401,16 +381,16 @@
 
     jQuery(document).ready(function(){	var sContent =
             '<div class="maptxt">'+
-                    '<h1><strong>西安万科·居住的智慧体验馆</strong></h1>'+
-                    '<p>西安市高新区科技路38号林凯国际大厦二楼</p>'+
-                    '<p>预约电话：029-88827799</p>'+
+                    '<h1><strong>成都万科·居住的智慧体验馆</strong></h1>'+
+                    '<p>成都市高新区科技路38号林凯国际大厦二楼</p>'+
+                    '<p>预约电话：028-88827799</p>'+
                     '<p><a href="http://j.map.baidu.com/CcJwp" target="_blank">查看详细地图</a><em class="explinkico">&nbsp;</em></p>'+
                     '</div>';
         var map = new BMap.Map('witmap');
-        var point = new BMap.Point(108.906944,34.238658);
+        var point = new BMap.Point(103.966488,30.651821);
         var marker = new BMap.Marker(point);
         var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
-        var point2 = new BMap.Point(108.906944,34.238658);
+        var point2 = new BMap.Point(103.966488,34.238658);
         map.centerAndZoom(point2, 18);
 
         var opts = {
