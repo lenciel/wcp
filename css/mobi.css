@@ -389,7 +389,7 @@ body {height: 100%; overflow: hidden;}
 .run-input .run-input-now{position: absolute;display: block;left: 50%;top: 50%;margin-top: 142px;margin-left: -123px;text-indent: -9999px;width: 123px;height: 47px;}
 .run-input .run-input-share{position: absolute;display: block;left: 50%;top: 50%;margin-top: 142px;margin-left: 3px;text-indent: -9999px;width: 123px;height: 47px;}
 .m-img img{display:none;position:absolute;top:50%;left:50%}
-.player-button{position:fixed;z-index:10000;display:block;top:10px;right:10px;width:30px;height:30px;background:url(../img/sample1/player-button.png) -30px 0;background-size:60px 30px;cursor:pointer;/*background-position: center;*/background-repeat: no-repeat;}
+.player-button{position:fixed;z-index:10000;display:block;top:10px;right:10px;width:30px;height:30px;background:url(../img/player-button.png) -30px 0;background-size:60px 30px;cursor:pointer;/*background-position: center;*/background-repeat: no-repeat;}
 .player-button-stop{background-position:0 0}
 .player-tip{position:absolute;top:5px;left:-140px;width:120px;background:rgba(59,89,114,.6);border-radius:4px 0 0 4px;font-size:10px;color:#ccc;line-height:20px;text-align:center}
 .player-tip:after{content:"";position:absolute;right:-32px;width:0;height:0;border-left:16px solid rgba(59,89,114,.6);border-top:10px solid transparent;border-right:16px solid transparent;border-bottom:10px solid transparent;}

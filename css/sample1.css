@@ -1,0 +1,14 @@
+/* sample1 specific styles */
+#takealook{position:absolute;top:0;left:0;height:100%;width:100%}
+.run-dialog{display:none;position:absolute;z-index:9999;top:0;left:0;width:100%;height:100%;background:url(../img/sample1/bg-drop.jpg) center top no-repeat;background-size:100% auto}
+.run-dialog-show{display:block}
+.run-dialog a{position:absolute;top:0;right:0;width:100%;height:100%}
+/*.run-input{position:relative}*/
+.run-input div{position:absolute;width: 254px;height: 38px;font-size:25px;margin-left:-127px;left: 50%; top: 50%;}
+.run-input input{text-indent: 1em;border:0;line-height:28px;background:none;width: 254px;height: 38px;font-size:20px;margin-left:-127px;left: 50%; top: 50%;position:absolute;background:transparent;}
+/*.run-input input:focus{margin-top: -0px;}*/
+.run-input .run-input-name{position: absolute;margin-top: -32px;}
+.run-input .run-input-phone{margin-top: 19px;}
+.run-input .run-input-id{margin-top: 75px;}
+.run-input .run-input-now{position: absolute;display: block;left: 50%;top: 50%;margin-top: 142px;margin-left: -123px;text-indent: -9999px;width: 123px;height: 47px;}
+.run-input .run-input-share{position: absolute;display: block;left: 50%;top: 50%;margin-top: 142px;margin-left: 3px;text-indent: -9999px;width: 123px;height: 47px;}
