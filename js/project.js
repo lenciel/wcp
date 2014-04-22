@@ -23,15 +23,15 @@ var Msize = $(".m-page").size(), 	//页面的数目
 /*
  ** 声音功能的控制
  */
-audio_switch_btn = true,			//声音开关控制值
-audio_btn = true,			//声音播放完毕
-audio_loop = true,		    //声音循环
-audioTime = null,         //声音播放延时
-audioTimeT = null,			//记录上次播放时间
-audio_interval = null,			//声音循环控制器
-audio_start = null,			//声音加载完毕
-audio_stop = null,			//声音是否在停止
-mousedown = null,			//PC鼠标控制鼠标按下获取值
+  audio_switch_btn = true,			//声音开关控制值
+  audio_btn = false,			//声音播放完毕
+  audio_loop = false,		    //声音循环
+  audioTime = null,         //声音播放延时
+  audioTimeT = null,			//记录上次播放时间
+  audio_interval = null,			//声音循环控制器
+  audio_start = null,			//声音加载完毕
+  audio_stop = null,			//声音是否在停止
+  mousedown = null,			//PC鼠标控制鼠标按下获取值
 
   /*
    ** 统计控制
@@ -254,11 +254,11 @@ function page_touchmove(e) {
     if (!DNmove) {
       //滑动带动页面滑动
       if (move) {
-//        //开启声音
-//        if ($("#car_audio").length > 0 && audio_switch_btn && Math.abs(moveP - firstP) > 100) {
-//          $("#car_audio")[0].play();
-//          audio_loop = true;
-//        }
+        //开启声音
+        if ($("#car_audio").length > 0 && audio_switch_btn && Math.abs(moveP - firstP) > 100) {
+          $("#car_audio")[0].play();
+          audio_loop = true;
+        }
 
         //移动中设置页面的值（top）
         start = false;
@@ -376,76 +376,76 @@ function success() {
  ** 声音功能
  */
 //关闭声音
-//function audio_close() {
-//  if (audio_btn && audio_loop) {
-//    audio_btn = false;
-//    audioTime = Number($("#car_audio")[0].duration - $("#car_audio")[0].currentTime) * 1000;
-//    if (audioTime < 0) {
-//      audioTime = 0;
-//    }
-//    if (audio_start) {
-//      if (isNaN(audioTime)) {
-//        audioTime = audioTimeT;
-//      } else {
-//        audioTime > audioTimeT ? audioTime = audioTime : audioTime = audioTimeT;
-//      }
-//    }
-//    ;
-//    if (!isNaN(audioTime) && audioTime != 0) {
-//      audio_btn = false;
-//      setTimeout(
-//        function () {
-//          $("#car_audio")[0].pause();
-//          $("#car_audio")[0].currentTime = 0;
-//          audio_btn = true;
-//          audio_start = true;
-//          if (!isNaN(audioTime) && audioTime > audioTimeT) audioTimeT = audioTime;
-//        }, audioTime);
-//    } else {
-//      audio_interval = setInterval(function () {
-//        if (!isNaN($("#car_audio")[0].duration)) {
-//          if ($("#car_audio")[0].currentTime != 0 && $("#car_audio")[0].duration != 0 && $("#car_audio")[0].duration == $("#car_audio")[0].currentTime) {
-//            $("#car_audio")[0].currentTime = 0;
-//            $("#car_audio")[0].pause();
-//            clearInterval(audio_interval);
-//            audio_btn = true;
-//            audio_start = true;
-//            if (!isNaN(audioTime) && audioTime > audioTimeT) audioTimeT = audioTime;
-//          }
-//        }
-//      }, 20)
-//    }
-//  }
-//}
+function audio_close() {
+  if (audio_btn && audio_loop) {
+    audio_btn = false;
+    audioTime = Number($("#car_audio")[0].duration - $("#car_audio")[0].currentTime) * 1000;
+    if (audioTime < 0) {
+      audioTime = 0;
+    }
+    if (audio_start) {
+      if (isNaN(audioTime)) {
+        audioTime = audioTimeT;
+      } else {
+        audioTime > audioTimeT ? audioTime = audioTime : audioTime = audioTimeT;
+      }
+    }
+    ;
+    if (!isNaN(audioTime) && audioTime != 0) {
+      audio_btn = false;
+      setTimeout(
+        function () {
+          $("#car_audio")[0].pause();
+          $("#car_audio")[0].currentTime = 0;
+          audio_btn = true;
+          audio_start = true;
+          if (!isNaN(audioTime) && audioTime > audioTimeT) audioTimeT = audioTime;
+        }, audioTime);
+    } else {
+      audio_interval = setInterval(function () {
+        if (!isNaN($("#car_audio")[0].duration)) {
+          if ($("#car_audio")[0].currentTime != 0 && $("#car_audio")[0].duration != 0 && $("#car_audio")[0].duration == $("#car_audio")[0].currentTime) {
+            $("#car_audio")[0].currentTime = 0;
+            $("#car_audio")[0].pause();
+            clearInterval(audio_interval);
+            audio_btn = true;
+            audio_start = true;
+            if (!isNaN(audioTime) && audioTime > audioTimeT) audioTimeT = audioTime;
+          }
+        }
+      }, 20)
+    }
+  }
+}
 
 //页面声音播放
-//$(function () {
-//  //获取声音元件
-//  var btn_au = $(".fn-audio").find(".btn");
-//
-//  //绑定点击事件
-//  btn_au.on('click', audio_switch);
-//  function audio_switch() {
-//    if ($("#car_audio") == undefined) {
-//      return;
-//    }
-//    if (audio_switch_btn) {
-//      //关闭声音
-//      $("#car_audio")[0].pause();
-//      audio_switch_btn = false;
-//      $("#car_audio")[0].currentTime = 0;
-//      btn_au.find("span").eq(0).css("display", "none");
-//      btn_au.find("span").eq(1).css("display", "inline-block");
-//    }
-//    //开启声音
-//    else {
-//      audio_switch_btn = true;
-//      btn_au.find("span").eq(1).css("display", "none");
-//      btn_au.find("span").eq(0).css("display", "inline-block");
-//    }
-//  }
-//
-//});
+$(function () {
+  //获取声音元件
+  var btn_au = $(".fn-audio").find(".btn");
+
+  //绑定点击事件
+  btn_au.on('click', audio_switch);
+  function audio_switch() {
+    if ($("#car_audio") == undefined) {
+      return;
+    }
+    if (audio_switch_btn) {
+      //关闭声音
+      $("#car_audio")[0].pause();
+      audio_switch_btn = false;
+      $("#car_audio")[0].currentTime = 0;
+      btn_au.find("span").eq(0).css("display", "none");
+      btn_au.find("span").eq(1).css("display", "inline-block");
+    }
+    //开启声音
+    else {
+      audio_switch_btn = true;
+      btn_au.find("span").eq(1).css("display", "none");
+      btn_au.find("span").eq(0).css("display", "inline-block");
+    }
+  }
+
+});
 
 /*
  **文本展开效果
@@ -614,14 +614,14 @@ function initPage() {
   $('.video-warp').on('click', function () {
     $('.m-video').find("video")[0].play();
     $(this).hide();
-//    $("#car_audio")[0].pause();
+    $("#car_audio")[0].pause();
   })
 
   //视频控制事件
   var video = $('.m-video').find("video");
   video.on('play', function () {
     $('.video-warp').hide();
-//    $("#car_audio")[0].pause();
+    $("#car_audio")[0].pause();
   })
   video.on('pause', function () {
     $('.video-warp').show();
