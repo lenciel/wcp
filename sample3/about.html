@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>津港湾水上世界 - 关于我们</title>
+    <link rel="stylesheet" media="screen" href="../css/plug.animate.css"/>
+    <link rel="stylesheet" href="../css/sample3.css"/>
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="Description" content="津港湾水上世界" />
+    <meta name="Keywords" content="津港湾水上世界" />
+    <meta name="robots" content="index,follow" />
+</head>
+<body>
+<header class="about-head"><span class="animated fadeInDown"></span></header>
+<h2 class="j-h2">津港湾水上世界</h2>
+<section class="about-main wit-main">
+    <div><img src="../img/sample3/about.jpg" alt=""></div>
+    <h2 class="a-h2">津港湾水上世界</h2>
+    <p class="a-p">津港湾水上世界是新津县委县政府发展大旅游格局下的重要组成部分，由旅游局牵头，远见智胜公司倾力打造集旅游、文化、娱乐、休闲于一体的综合性项目。</p>
+    <p class="a-p">津港湾水上世界通航水域长达十公里，水上世界建成后包含豪华游船、大型房船，水上巴士、水上餐饮、水上游乐、水上运动等各类船只，船型丰富，是集旅游、休闲、商务等多种功能的复合型水上项目。在拥有生发之水、繁盛之水的新津，利用良好的水资源优势，坚持现代产业、现代都市、现代生活"三位一体"的基本理念，策划特色水上旅游，引入新兴产业，做到业态、文态、生态、形态"四态合一"，"因水而名"的新津定会更具活力与吸引力，将大大丰富新津县旅游资源，带动旅游消费，拉升新津整个旅游业发展。同时，远见公司本着"安全"与环保的原则下，通过加大自身投入，对项目所在水域内进行统一规划、建设，对改造南河水质，提升城市整体形象都有重要的促进作用。</p>
+</section>
+    <a href="./index.html" class="ui-gotohome">返回首页</a>
+</section>
+
+<script src="../js/zepto1.0.js"></script>
+<script src="../js/plugs/plug.slide.js"></script>
+<script>
+    //隐藏地址栏
+    addEventListener('load', function(){ setTimeout(function(){window.scrollTo(0,1);}, 0); }, false);
+    var _Conf={
+        img:'http://wcp.wewelink.cn/img/apple-touch-icon-precomposed.png',
+        w:57,
+        h:57,
+        url:'http://weibo.com/u/5053647368',
+        title:'津港湾水上世界',
+        desc:'津港湾水上世界',
+        appid:''
+    }
+    function _ShareFriend() {
+        WeixinJSBridge.invoke('sendAppMessage',{
+            'appid': _Conf.appid,
+            'img_url': _Conf.img,
+            'img_width': _Conf.w,
+            'img_height': _Conf.h,
+            'link': _Conf.url,
+            'desc': _Conf.desc,
+            'title': _Conf.title
+        }, function(res){
+            _report('send_msg', res.err_msg);
+        })
+    }
+    function _ShareTL() {
+        WeixinJSBridge.invoke('shareTimeline',{
+            'img_url': _Conf.img,
+            'img_width': _Conf.w,
+            'img_height': _Conf.h,
+            'link': _Conf.url,
+            'desc': _Conf.desc,
+            'title': _Conf.title
+        }, function(res) {
+            _report('timeline', res.err_msg);
+        });
+    }
+    function _ShareWB() {
+        WeixinJSBridge.invoke('shareWeibo',{
+            'content': _Conf.desc,
+            'url': _Conf.url,
+        }, function(res) {
+            _report('weibo', res.err_msg);
+        });
+    }
+    // 当微信内置浏览器初始化后会触发WeixinJSBridgeReady事件。
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        // 发送给好友
+        WeixinJSBridge.on('menu:share:appmessage', function(argv){
+            _ShareFriend();
+        });
+
+        // 分享到朋友圈
+        WeixinJSBridge.on('menu:share:timeline', function(argv){
+            _ShareTL();
+        });
+
+        // 分享到微博
+        WeixinJSBridge.on('menu:share:weibo', function(argv){
+            _ShareWB();
+        });
+    }, false);
+    //COOKIE的操作 - 写
+    function SetCookie(name,val,years){
+        var d=years*365*24*60*60*1000 || 365;
+        var D=new Date();
+        D.setTime(D.getTime+d);
+        document.cookie=name+'='+escape(val)+';expires='+D.toGMTString();
+    }
+    function GetCookie(name){
+        var arr,reg=new RegExp('(^| )'+name+'=([^;]*)(;|$)');
+        if(arr=document.cookie.match(reg)){
+            return arr[2];
+        }else{
+            return null;
+        }
+    }
+    //是否第一次访问
+    if(GetCookie('WIT_Visit')!=1){
+        SetCookie('WIT_Visit',1);
+        window.location.href='/';
+    }
+    $('#WITSlide,#XZSlide').slider();
+</script>
+</body>
+</html>
