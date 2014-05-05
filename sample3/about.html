@@ -68,7 +68,7 @@
     function _ShareWB() {
         WeixinJSBridge.invoke('shareWeibo',{
             'content': _Conf.desc,
-            'url': _Conf.url,
+            'url': _Conf.url
         }, function(res) {
             _report('weibo', res.err_msg);
         });
