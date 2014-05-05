@@ -10,5 +10,5 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 	}
 }
 else{
-window.location.href="http://nj.house.qq.com/wap/error.htm"
+window.location.href="http://wcp.wewelink.cn/error.html"
 }
