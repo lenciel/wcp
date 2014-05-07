@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="楼盘详情"/>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="author" content="marsliang">
+  <style type="text/css">
+    body { padding:0; margin:0; width:100%; height:100%; background:#fddc99;}
+    .top { width:100%; margin:0 auto;}
+    .cont { width:100%; font-family:"微软雅黑"; font-size:120%;}
+    .cont .id { padding:15px 3%; width:94%; font-size:90%; font-weight:bold; color:#fddc99; background:#381b47; line-height:22px;}
+    .cont .text p { padding:0; margin:0; line-height:22px; color:#000; text-indent:2em;}
+    .cont .text { width:94%; padding:15px 3% 0;}
+    .bq { width:100%; text-align:center; color:#666; font-family:"微软雅黑"; font-size:100%; padding:5px 0;}
+
+    .back{width:25%; position:fixed; right:0; top:5px; z-index:999;}
+    * html .back{position:absolute; z-index:99999;left:expression(eval(document.documentElement.scrollLeft));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))}
+  </style>
+
+  <title>楼盘详情</title>
+
+  <link href="static/css/house_wechat.css" rel="stylesheet" type="text/css" />
+  <link href="static/css/xsd/fd_a.css" rel="stylesheet" type="text/css">
+  <link href="static/css/xsd/fd_b.css" rel="stylesheet" type="text/css">
+  <link href="static/css/xsd/fd_c.css" rel="stylesheet" type="text/css">
+  <link href="static/css/xsd/fd_d.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bc_f8" style=" background:#fddc99;">
+<div class="cont">
+  <div class="back animated fadeInDownBig"><a href="index.html"><img src="static/img/back.png" width="100%;"></a></div>
+  <div style="width:100%; margin:0 auto;" class="animated fadeInDown"><img src="static/img/tt.png" width="100%"></div>
+  <div class="id animated fadeInDown"><img src="static/img/project_icon.png" style="float:left; width:60px; height:60px; margin-top:-8px; padding-right:10px;">莱克汽车<br>微信号：TBA</div>
+  <div style="width:100%; margin:0 auto;" class="animated fadeInDown"><img src="static/img/tt.png" width="100%"></div>
+</div>
+<div class="wrap">
+  <div class="bd_top_box">
+    <img src="static/img/project_intro/top_header.jpg" />
+  </div>
+  <div class="bd_head_box">
+    <div class="price_apply">
+      <p>遂宁莱克国际汽车商贸园<br/>项目占地：<em class="cf60">342亩</em></p>
+      <!--<a bosszone="detailyuyuekanfangbutton" href="#">预约看房</a>-->
+    </div>
+  </div>
+  <div class="bd_main_box">
+    <!--<div class="r_btn_box">-->
+      <!--<a bosszone="detailmaplink" class="r_arr_btn" href="http://wx.house.qq.com/?mod=houseweixin&act=map&aid=2630"><span class="map_txt">地图</span><em class="map"></em>南京市江宁区麒麟科创园东.....</a>-->
+      <!--<span class="r_arr"><a href="http://wx.house.qq.com/?mod=houseweixin&act=map&aid=2630"><em></em></a></span>-->
+    <!--</div>-->
+    <div class="bd_detail_box">
+      <h2>项目介绍</h2>
+      <div id="peitaoless">
+
+        <p>物业类别：商业</p>
+        <p>项目位置：遂宁船山区中国西部现代物流港</p>
+        <p>开盘时间：TBA </p>
+        <p>入住时间：TBA </p>
+        <p>遂宁莱克国际汽车商贸园位于遂宁船山区中国西部现代物流港，项目占地342亩,涵盖莱克汽车广场、金融仓储中心、高端精品维修集群以及商务配套</p>
+      </div>
+    </div>
+
+    <div class="bd_detail_box">
+      <h2>城市介绍</h2>
+      <p>中国著名的观音文化之乡，位于四川盆地中部腹心，涪江中游。是四川第二大交通枢纽城市也是四川第二个拥有中央商务区的城市。先后获得过联合国可持续发展大会（RIO+20）“全球绿色城市”称号、中国城市公益慈善七星城市、国家级生态示范区、绿色经济示范城市、全国绿化模范城市、流通领域现代物流示范城市、国家园林城市、中国人居环境范例奖、国家卫生城市、中国金融生态市、中国优秀旅游城市、中国观音文化之乡、全国社会治安综合治理优秀市、曲艺之乡、诗酒之乡、书法之乡。</p>
+      <p>中文名称：	遂宁</p>
+      <p>外文名称：	Sui Ning</p>
+      <div class="hide_detail">
+        <p>别名：	斗城</p>
+        <p>行政区类别：	地级市</p>
+        <p>所属地区：	四川省</p>
+        <p>下辖地区：	2区3县</p>
+        <p>政府驻地：	船山区东平大道河东行政大楼</p>
+      </div>
+      <div class="more_btn_box"><a bosszone="detailloupanjianjiemore" id="bulidIntro" class="more_btn" href="javascript:;">更多<em class="down"></em></a></div>
+    </div>
+
+    <div class="fix_phone_box"><a bosszone="detailphone" id="phoneBox2" href="tel:400-700-1234,24045"><em class=""></em>028 68005115</a></div>
+    <p style="margin:8px auto;text-align:center;"><span>微联科技版权所有</span></p>
+  </div>
+</div>
+<script src="static/js/house_wchat.js"></script>
+<script>
+  if(typeof page_detail != 'undefined'){
+    page_detail.init();
+  }
+</script>
+<script>
+  var dataForWeixin = {
+    appId: "",
+    MsgImg: "static/img/project_icon.png",
+    TLImg: "static/img/project_icon.png",
+    path: "intro",
+    title: "莱克汽车",
+    desc: "莱克汽车",
+    shareUrl: 'http://wcp.lenciel.cn/lk',
+    fakeid: "",
+    callback: function(){}
+  };
+</script>
+<script src="static/js/share.js"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="项目进度"/>
+  <meta name="format-detection" content="telephone=no">
+  <style type="text/css">
+    body { padding:0; margin:0; width:100%; height:100%; background:#fddc99;}
+    .top { width:100%; margin:0 auto;}
+    .cont { width:100%; font-family:"微软雅黑"; font-size:120%;}
+    .cont .id { padding:15px 3%; width:94%; font-size:90%; font-weight:bold; color:#fddc99; background:#381b47; line-height:22px;}
+    .cont .text p { padding:0; margin:0; line-height:22px; color:#000; text-indent:2em;}
+    .cont .text { width:94%; padding:15px 3% 0;}
+    .bq { width:100%; text-align:center; color:#666; font-family:"微软雅黑"; font-size:100%; padding:5px 0;}
+
+    .back{width:25%; position:fixed; right:0; top:5px; z-index:999;}
+    * html .back{position:absolute; z-index:99999;left:expression(eval(document.documentElement.scrollLeft));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))}
+  </style>
+
+  <title>楼盘详情</title>
+
+  <link href="static/css/house_wechat.css" rel="stylesheet" type="text/css" />
+  <link href="static/css/xsd/fd_a.css" rel="stylesheet" type="text/css">
+  <link href="static/css/xsd/fd_b.css" rel="stylesheet" type="text/css">
+  <link href="static/css/xsd/fd_c.css" rel="stylesheet" type="text/css">
+  <link href="static/css/xsd/fd_d.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="cont">
+    <div class="back animated fadeInDownBig"><a href="index.html"><img src="static/img/back.png" width="100%;"></a></div>
+    <div style="width:100%; margin:0 auto;" class="animated fadeInDown"><img src="static/img/tt.png" width="100%"></div>
+    <div class="id animated fadeInDown"><img src="static/img/project_icon.png" style="float:left; width:60px; height:60px; margin-top:-8px; padding-right:10px;">莱克汽车<br>微信号：TBA</div>
+    <div style="width:100%; margin:0 auto;" class="animated fadeInDown"><img src="static/img/tt.png" width="100%"></div>
+    <div class="top animated flipInX"><img src="static/img/project_progress/top_header.jpg" width="100%"></div>
+    <div class="text animated fadeInUp">
+      <p>莱克汽车已建成的成都、达州等国际汽车商贸园运行良好，本项目是莱克公司在四川布局再建的多个国际汽车商贸园之一，位于遂宁市省级物流港开发区内，占地342亩，总建筑面积近30万平方米本项目总投资20亿元，建设周期为30个月。项目一期建设时间为20个月，一期建设面积合计约230000㎡（其中：莱克汽车广场30000㎡、金融仓储约150000㎡、汽车金融交易中心约50000㎡）；项目二期建设时间为22个月（一期建设进度至8个月后启动二期项目建设），项目二期建设面积合计约180000㎡，（其中：精品维修集群约60000㎡、汽车精品商业约50000㎡、配套星级酒店约30000㎡、汽车产业综合商务用房约40000㎡）,预计建成后每年可实现销售收入204248万元、利税5000万元，解决就业1000人，项目建成后将成为集汽车主题酒店、金融仓储、写字楼、4S销售为一体的汽车商贸园。</p>
+      <p>项目除引入高中低不同档次众多汽车品牌之外，还打通了高端产品如玛莎拉蒂、宾利、阿斯顿马丁等品牌进入遂宁市场的渠道。高端精品维修集群与四川省汽车维修行业协会和生产厂家直线对接，填补了遂宁高端汽修的空白。遂宁莱克国际汽车商贸园的落成运营，将进一步提升汽车流通市场形象，推动遂宁汽车产业的发展进程。 </p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <div class="bq">莱克汽车&nbsp;&nbsp;微联科技出品</div>
+  <script>
+    var dataForWeixin = {
+      appId: "",
+      MsgImg: "static/img/project_icon.png",
+      TLImg: "static/img/project_icon.png",
+      path: "intro",
+      title: "莱克汽车",
+      desc: "莱克汽车",
+      shareUrl: 'http://wcp.lenciel.cn/lk',
+      fakeid: "",
+      callback: function(){}
+    };
+  </script>
+  <script src="static/js/share.js"></script>
+
+
+</body>
+</html>
