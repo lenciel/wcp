@@ -22,7 +22,7 @@ body { margin:0; padding:0; background:#381b47; font-family:"微软雅黑"; font
 .bt_z { width:100%; background:url(../img/home_bg.png) left center; background-size:100%; padding:20px 0;}
 .button { width:100%; margin:0 auto;}
 .button ul { padding:0; margin:0; width:80%; margin:0 auto;}
-.button li { float:left; background:url(../img/home_star_button.png) no-repeat 35px; width:40%; padding:13px 0 8px 5%; line-height:15px; border-radius:5px; color:#c09861; font-size:70%; list-style:none; text-align:center; margin-left:1%;}
+.button li { float:left; background:url(../img/home_star_button.png) no-repeat 30px; width:40%; padding:13px 0 8px 5%; line-height:15px; border-radius:5px; color:#c09861; font-size:70%; list-style:none; text-align:center; margin-left:1%;}
 .button li span { font-size:45%; line-height:5px; text-align:left;}
 .button li a { color:#c09861; text-decoration:none;}
 .button li a:hover { color:#c09861; text-decoration:none;}
