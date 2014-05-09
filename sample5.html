@@ -122,6 +122,22 @@
   document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faeb4709a8a435b6f2b8c8736a3d9bd75' type='text/javascript'%3E%3C/script%3E"));
 </script>
 
+<script>
+  // JavaScript Document
+  if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+    if(window.location.href.indexOf("?mobile")<0){
+      try{
+        if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+        }else if(/iPad/i.test(navigator.userAgent)){
+        }else{
+        }
+      }catch(e){}
+    }
+  }
+  else{
+    window.location.href="http://wcp.wewelink.cn/error.html"
+  }
+</script>
 <!--# wechat share plugin #-->
 <script src="js/plugs/plug.wxshare.js"></script>
 <script>
